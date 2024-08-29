@@ -1,4 +1,7 @@
 /* Resetting default styles */
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +56,9 @@ section {
 .navbar_item a:hover {
   color: #fc772d; /* Highlight color on hover */
 }
-
+section[id] {
+  scroll-margin-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
 .container {
   max-width: 1400px; /* Membatasi lebar carousel */
   width: 100%;
@@ -64,7 +69,7 @@ section {
 
 .text-overlay {
   position: absolute;
-  top: 10%; /* Jarak dari atas container */
+  top: 20%; /* Jarak dari atas container */
   left: 50%;
   transform: translateX(-50%); /* Pusatkan horizontal */
   text-align: center;
@@ -80,7 +85,7 @@ section {
 }
 
 .text-overlay p {
-  font-size: 24px;
+  font-size: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -124,6 +129,54 @@ section {
 
 .carousel_button--right {
   right: 10px;
+}
+
+/* CSS untuk facilities */
+
+#facilities {
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Background color for the section */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facilities-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.facility-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 30%; /* Flex properties for responsive design */
+  max-width: 300px;
+}
+
+.facility-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits well inside the circle */
+  margin-bottom: 15px;
+}
+
+.facility-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.facility-card p {
+  font-size: 14px;
+  color: #666;
 }
 
 /* CSS untuk Contact */
@@ -214,3 +267,67 @@ textarea.form-control {
 .btn:hover {
   background-color: #ec5c3c;
 }
+
+/* CSS untuk footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid #f1613c;
+  padding-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section .social-icon {
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* CSS untuk responsive design */

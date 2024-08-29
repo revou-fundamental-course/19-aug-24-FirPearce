@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website School</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" />
     <link rel="stylesheet" href="public/css/input.css" />
   </head>
   <body>
@@ -11,7 +14,7 @@
     <section>
       <div class="navbar-container">
         <nav class="navbar">
-          <div class="navbar_brand">Firpearce</div>
+          <div class="navbar_brand">SMAN 18 BANDUNG</div>
           <ul class="navbar_menu">
             <li class="navbar_item"><a href="#profile">Our Profile</a></li>
             <li class="navbar_item">
@@ -24,12 +27,12 @@
     </section>
     <!-- End Nav Section -->
     <!-- header section -->
-    <section>
+    <section id="profile">
       <!-- carousel -->
       <div class="container">
         <div class="text-overlay">
-          <h1>Welcome <strong id="username">User</strong></h1>
-          <p>Jl. Kampung Durian Runtuh No.90</p>
+          <p>Welcome<strong id="username">Firpearce</strong> to</p>
+          <h1>SMAN 18 BANDUNG</h1>
         </div>
         <div class="carousel">
           <div class="carousel_container">
@@ -39,16 +42,14 @@
                 alt="1" />
             </div>
             <div class="carousel_item">
-              <img src="public/img/2.jpg" alt="2" />
+              <img
+                src="https://ujiansma.com/wp-content/uploads/2015/11/gb91.jpg"
+                alt="2" />
             </div>
             <div class="carousel_item">
-              <img src="public/img/3.jpg" alt="3" />
-            </div>
-            <div class="carousel_item">
-              <img src="public/img/4.jpg" alt="4" />
-            </div>
-            <div class="carousel_item">
-              <img src="public/img/5.jpg" alt="5" />
+              <img
+                src="https://jurnalisnews.com/wp-content/uploads/2022/01/sma-18....3.jpg"
+                alt="3" />
             </div>
           </div>
           <button class="carousel_button carousel_button--left">
@@ -65,9 +66,50 @@
     <!-- facilities section -->
     <section id="facilities">
       <div class="container">
-        <!-- buatkan image rounded dari beberapa facilities dengan title dan short description under image make it card -->
+        <div class="facilities-cards">
+          <!-- Card 1 -->
+          <div class="facility-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/9043/9043296.png"
+              alt="Facility 1"
+              class="facility-image" />
+            <h3>Library</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              saepe delectus quidem ducimus fugiat consequuntur unde minus
+              consequatur esse modi?
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="facility-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/8711/8711362.png"
+              alt="Facility 2"
+              class="facility-image" />
+            <h3>Labs</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Temporibus asperiores expedita id repudiandae ducimus autem aut
+              libero! Perspiciatis, dolorum accusantium!
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="facility-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2795/2795550.png"
+              alt="Facility 3"
+              class="facility-image" />
+            <h3>Canteen</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              corrupti dignissimos dolorem maiores? Similique reprehenderit
+              ullam distinctio cumque mollitia dolor.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- end facilities section -->
 
     <!-- contact section -->
@@ -123,8 +165,55 @@
         </div>
       </div>
     </section>
+    <!-- footer start -->
+    <section>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac
+              nisl ut lectus tincidunt tristique.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#facilities">Facilities</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street Name, City, Country</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://facebook.com" target="_blank" class="social-icon"
+              >Facebook</a
+            >
+            <a href="https://twitter.com" target="_blank" class="social-icon"
+              >Twitter</a
+            >
+            <a href="https://instagram.com" target="_blank" class="social-icon"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Made with HTML,CSS,Javascript</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- footer end -->
 
     <!-- end contact section -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
     <script src="public/js/script.js"></script>
   </body>
 </html>
