@@ -331,3 +331,75 @@ footer {
 }
 
 /* CSS untuk responsive design */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .navbar_menu {
+    display: none; /* Hide menu items on small screens */
+  }
+
+  .navbar_brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar_toggle {
+    display: block;
+    background: #fc772d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .navbar_toggle.active + .navbar_menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar_item {
+    margin: 10px 0;
+  }
+
+  .text-overlay h1 {
+    font-size: 50px;
+  }
+
+  .text-overlay p {
+    font-size: 20px;
+  }
+
+  .carousel_button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .facility-card {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .contact,
+  .result-display {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay h1 {
+    font-size: 35px;
+  }
+
+  .text-overlay p {
+    font-size: 18px;
+  }
+
+  .carousel_button {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
